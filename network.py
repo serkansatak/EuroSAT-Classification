@@ -179,7 +179,7 @@ if __name__ == "__main__":
     model = Net()
     model.to(model._device)
     
-    ensemble = VotingClassifier(estimator=Net,
+    ensemble = Ensemble(estimator=Net,
                                 n_estimators=10)
     
     
